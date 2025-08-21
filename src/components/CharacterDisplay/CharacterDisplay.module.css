@@ -1,0 +1,112 @@
+.characterCard {
+  @apply bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 mb-6;
+  @apply border border-gray-200 dark:border-gray-700;
+}
+
+.characterHeader {
+  @apply flex flex-col sm:flex-row sm:items-center sm:justify-between mb-6;
+  @apply border-b border-gray-200 dark:border-gray-600 pb-4;
+}
+
+.characterName {
+  @apply text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-2 sm:mb-0;
+}
+
+.characterLevel {
+  @apply text-lg text-gray-600 dark:text-gray-300;
+}
+
+.statsGrid {
+  @apply grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 mb-6;
+}
+
+.statItem {
+  @apply bg-gray-50 dark:bg-gray-700 rounded-lg p-3 text-center;
+}
+
+.statLabel {
+  @apply text-sm font-medium text-gray-600 dark:text-gray-400 uppercase tracking-wide;
+}
+
+.statValue {
+  @apply text-xl font-bold text-gray-900 dark:text-white mt-1;
+}
+
+.hpSection {
+  @apply bg-gradient-to-r from-red-50 to-red-100 dark:from-red-900/20 dark:to-red-800/20;
+  @apply rounded-lg p-4 mb-6 border border-red-200 dark:border-red-800;
+}
+
+.hpTitle {
+  @apply text-lg font-semibold text-red-800 dark:text-red-200 mb-3;
+}
+
+.hpGrid {
+  @apply grid grid-cols-1 sm:grid-cols-3 gap-4;
+}
+
+.hpItem {
+  @apply text-center;
+}
+
+.hpLabel {
+  @apply text-sm font-medium text-red-700 dark:text-red-300 uppercase tracking-wide;
+}
+
+.hpValue {
+  @apply text-2xl font-bold text-red-900 dark:text-red-100 mt-1;
+}
+
+.hpCurrent {
+  @apply text-green-600 dark:text-green-400;
+}
+
+.hpTemporary {
+  @apply text-blue-600 dark:text-blue-400;
+}
+
+.hpMax {
+  @apply text-gray-600 dark:text-gray-400;
+}
+
+.defensesSection {
+  @apply bg-gray-50 dark:bg-gray-700 rounded-lg p-4;
+}
+
+.defensesTitle {
+  @apply text-lg font-semibold text-gray-800 dark:text-gray-200 mb-3;
+}
+
+.defensesList {
+  @apply flex flex-wrap gap-2;
+}
+
+.defenseItem {
+  @apply px-3 py-1 rounded-full text-sm font-medium;
+}
+
+.immunity {
+  @apply bg-purple-100 text-purple-800 dark:bg-purple-900/30 dark:text-purple-300;
+}
+
+.resistance {
+  @apply bg-yellow-100 text-yellow-800 dark:bg-yellow-900/30 dark:text-yellow-300;
+}
+
+.noDefenses {
+  @apply text-gray-500 dark:text-gray-400 italic;
+}
+
+@media (max-width: 640px) {
+  .characterCard {
+    @apply p-4;
+  }
+  
+  .statsGrid {
+    @apply grid-cols-2;
+  }
+  
+  .hpGrid {
+    @apply grid-cols-1;
+  }
+}
